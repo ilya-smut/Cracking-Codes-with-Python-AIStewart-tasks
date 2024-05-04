@@ -1,0 +1,1 @@
+Exercises from Cracking Codes with Python AI Stewart
