@@ -1,0 +1,3 @@
+[submodule "AffineCipher"]
+	path = AffineCipher
+	url = https://github.com/ilya-smut/AffineCipher.git
