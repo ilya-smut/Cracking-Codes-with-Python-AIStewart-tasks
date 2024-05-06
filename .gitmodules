@@ -1,3 +1,6 @@
 [submodule "AffineCipher"]
 	path = AffineCipher
 	url = https://github.com/ilya-smut/AffineCipher.git
+[submodule "Vigenere"]
+	path = Vigenere
+	url = https://github.com/ilya-smut/Vignere_Cipher_Python.git

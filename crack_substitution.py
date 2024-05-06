@@ -1,19 +1,18 @@
+import copy
+import re
+import simple_substitution
+
 import make_word_patterns
 from make_word_patterns import get_word_pattern
-import re, simple_substitution, copy
 
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 all_patterns = make_word_patterns.get_all_patterns('dictionary.txt')
 non_letters_or_space_pattern = re.compile('[^A-Z ]')
-"""
-Regular expressions are strings that define a specific pattern that matches
-certain strings.
-Let's break down the pattern:
-    []: Square brackets denote a character class, meaning any character inside these brackets will be matched.
-    ^: Inside a character class, the caret symbol (^) negates the character class, meaning it matches any character not specified within the brackets.
-    A-Z: This specifies a range of characters from A to Z, inclusive. So, any uppercase letter will be matched.
-    ' ': This matches any whitespace character, such as space, tab, or newline.
-"""
+"""Regular expressions are strings that define a specific pattern that matches certain strings. Let's break down the 
+pattern: []: Square brackets denote a character class, meaning any character inside these brackets will be matched. 
+^: Inside a character class, the caret symbol (^) negates the character class, meaning it matches any character not 
+specified within the brackets. A-Z: This specifies a range of characters from A to Z, inclusive. So, any uppercase 
+letter will be matched. ' ': This matches any whitespace character, such as space, tab, or newline."""
 
 
 def blank_cipher_mapping():
